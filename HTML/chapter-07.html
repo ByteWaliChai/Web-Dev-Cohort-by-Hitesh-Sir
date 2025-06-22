@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChaiCode</title>
 </head>
+
 <body>
 
-    <h1>Forms</h1>
+    <div style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        ">
+        
+    <form style="
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    ">
+        <h1 style="text-align: center;">Contact Form</h1>
 
-    <form action="backend.com/api/joManHo" method="post">
-        <label for="name">Name</label>
-        <input type="text" placeholder="name">
-        <button type="submit">Submit</button>
+        <!-- Only accepted phone number -->
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" required
+        style="width: 100%; padding: 8px; margin-bottom: 15px;">
+
+        <br>
+        <br>
+
+        <!-- Password Validation -->
+        <label for="password">Password:</label> <br>
+        <input type="password" id="password" name="password" pattern=".{8}" required title="At list 8 characters"
+            placeholder="Enter password" style="width: 100%; padding: 8px; margin-bottom: 15px;">
+
+        <br><br>
+
+        <!-- additional comments -->
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write your comments here..." 
+        style="width: 100%; padding: 8px; margin-bottom: 15px;"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="submit" 
+        style="width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">
+
     </form>
-    
+
+    </div>
+
+
 </body>
+
 </html>
