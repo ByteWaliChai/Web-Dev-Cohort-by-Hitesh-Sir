@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Feature Page</title>
+</head>
+<body>
+
+    <!-- FORM SECTION -->
+     <h2>User Info Form</h2>
+
+     <form>
+
+        <!-- email field -->
+         <label for="email">Email:</label><br>
+         <input type="email" id="email" name="email" required placeholder="Enter your email"> <br><br> 
+
+         <!-- Date of Birth Picker -->
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <!-- Favorite Color Picker -->
+    <label for="color">Favorite Color:</label><br>
+    <input type="color" id="color" name="color"><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <hr>
+
+  <!-- VIDEO SECTION -->
+  <h2>Sample Video</h2>
+  <video width="640" height="360" controls poster="your-image.jpg">
+    <source src="your-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <hr>
+
+  <!-- CANVAS SECTION -->
+  <h2>Canvas Drawing</h2>
+  <canvas id="myCanvas" width="300" height="150" style="border:1px solid #000000;"></canvas>
+
+  <script>
+    // Draw a filled rectangle using JavaScript
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "#4CAF50"; // green color
+    ctx.fillRect(50, 30, 200, 80); // x, y, width, height
+  </script>
+
+     </form>
+    
+</body>
+</html>

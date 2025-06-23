@@ -4,23 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChaiCode</title>
+    <title>Embedded Video Example</title>
 </head>
 
 <body>
 
-    <h1>Multimedia</h1>
+    <h2>My Sample Video</h2>
 
-    <video muted poster="" width="" src=""></video>
-    <input type="text" disabled>
+    <video width="640" height="360" controls autoplay poster="prabhat.jpg">
+        <source src="prabhat-video.mp4" type="video/mp4">
 
-    Video from YouTube
-    <iframe
-    data-="" costom data store kr skte h
-    src="https://youtu.be/p6NHGIXERmA?si=_ZPAuwssEdnLbypU" 
-    width="500px" 
-    frameborder="0" 
-    title="test">YouTube Video</iframe>
+        <!-- SubTitle -->
+         <track src="subtitle.vtt" kind="subtitles" srclang="en" label="English" default></track>
+
+        Your browser does not support the video tag.
+    </video>
 
 </body>
 
