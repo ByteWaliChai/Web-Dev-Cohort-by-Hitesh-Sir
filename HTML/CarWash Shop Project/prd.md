@@ -1,4 +1,12 @@
-## PRD
+## PRD For CarWash Shop
+
+**Project Name**: QuickShine Car Wash
+
+**Location**: Patna Bihar
+
+**Prepared For**: HTML-Only
+
+**Author**: Prabhat Kumar
 
 ## Objective and Purposre
 The goal is to start a Car Wash Service in Patna that is easy to find, affordable, and trustworthy, especially for people who face difficulty locating nearby car washing options or booking reliable services.
