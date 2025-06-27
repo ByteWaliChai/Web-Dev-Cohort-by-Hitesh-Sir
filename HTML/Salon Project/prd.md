@@ -37,7 +37,6 @@ People in Patna often face multiple problems while finding a salon:
 ### Out of Scope:
 - Online appointment booking
 - Payment integrations
-- CSS styling or responsive layout
 - Any form validation or interactivity
 
 ## Target Audience
