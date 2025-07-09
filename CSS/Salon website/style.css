@@ -1,0 +1,251 @@
+@font-face {
+    font-family: Karla;
+    src: url(./Karla\,Lato\,Manufacturing_Consent/);
+}
+@font-face {
+    font-family: Manu;
+    src: url(./Manufacturing_Consent/ManufacturingConsent-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #293341;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 130px;
+    border-radius: 40%;
+    background-color: transparent;
+    object-fit: contain;
+}
+
+.logo p {
+    font-family: Manu;
+    padding: 0 0 0 10px;
+    color: #9c9999
+}
+
+nav a {
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #c5c4c4
+}
+
+nav a:hover {
+    color: #fff
+}
+
+.btn button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-style: none;
+    border: .5px solid #cf9fc0;
+    margin-left: 10px;
+    font-size: 18px;
+    background: #1b1e26;
+    color: #cf9fc0;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background: #7c3e5d;
+    color: #fff
+}
+
+main {
+    background: #E8F0EF;
+}
+
+#about {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: #dd9f6a6e */
+    color: #2e2828;
+}
+
+#about article h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#about article p {
+    margin: 0 30px;
+    font-size: 1.5rem;
+}
+
+.second-para {
+    padding-top: 10px;
+}
+
+.about-img {
+    width: 120%;
+}
+
+.about-img img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #070707;
+}
+
+#services {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+#services article {
+    width: 50%;
+}
+
+#services article h2 {
+    padding: 1.5rem 0;
+    font-size: 3rem;
+    
+}
+
+#services article h3 {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+}
+
+#services article ul {
+    list-style: none;
+}
+
+#services article ul li {
+    padding: 0 4rem;
+    font-size: 1.7rem;
+}
+
+#services aside {
+    width: 50%;
+}
+
+#services aside figure img {
+    width: 100%;
+    margin: 1rem 0;
+    object-fit: contain;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #070707;
+}
+
+#services aside figure figcaption {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0 1rem;
+}
+
+.prices-table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 60px;
+    width: 70%;
+    height: 40%;
+}
+
+th, td {
+    width: 150px;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #052d4b;
+    text-align: center;
+}
+
+th{
+    background-color: #052d4b;
+    color: #c5c4c4;
+    font-size: 1.5rem;
+}
+
+td {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#contact {
+    padding: 1.5rem 2rem;
+    display: flex;
+}
+
+#contact address {
+    width: 50%;
+}
+
+#contact address h2 {
+ font-size: 2.2rem;
+  margin: 1rem 1.5rem;
+}
+
+#contact address p {
+    padding: 0 2rem;
+    margin: .5rem 0;
+ font-size: 1.5rem;
+}
+
+#contact aside h2 {
+ font-size: 2.2rem;
+ margin: 1rem 1.5rem;
+}
+
+#contact aside ul {
+    list-style: none;
+}
+
+#contact aside ul li {
+    padding: 0 2rem;
+    margin: .5rem 0;
+ font-size: 1.5rem;
+}
+
+#tips h2 {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+#tips ul {
+    list-style: none;
+}
+
+.tips-guide {
+    padding-bottom: 1rem;
+    margin: .8rem 0;
+}
+
+#tips ul li {
+    text-align: center;
+    margin: .1rem;
+    font-size: 1.2rem;
+}
+
+footer {
+    padding: 2rem;
+    background: #070707;
+    color: #E8F0EF;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #E8F0EF;
+}
