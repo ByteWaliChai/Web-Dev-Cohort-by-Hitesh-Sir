@@ -1,8 +1,4 @@
 @font-face {
-    font-family: Karla;
-    src: url(./Karla\,Lato\,Manufacturing_Consent/);
-}
-@font-face {
     font-family: Manu;
     src: url(./Manufacturing_Consent/ManufacturingConsent-Regular.ttf);
 }
@@ -22,8 +18,12 @@ header {
     align-items: center;
 }
 
+.logo {
+    width: 7%;
+}
+
 .logo img {
-    width: 130px;
+    width: 100%;
     border-radius: 40%;
     background-color: transparent;
     object-fit: contain;
@@ -64,7 +64,7 @@ nav a:hover {
 }
 
 main {
-    background: #E8F0EF;
+    background: #EDE1D6;
 }
 
 #about {
@@ -72,19 +72,27 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background: #dd9f6a6e */
+    background: #EDE1D6;
     color: #2e2828;
+    box-shadow: 0 0 10px #e4d9cf;
+}
+#about article {
+    margin: 2rem;
+    
 }
 
 #about article h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
 #about article p {
     margin: 0 30px;
     font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .second-para {
@@ -92,7 +100,7 @@ main {
 }
 
 .about-img {
-    width: 120%;
+    width: 180%;
 }
 
 .about-img img {
@@ -111,26 +119,37 @@ main {
 
 #services article {
     width: 50%;
+    margin: 2rem;
 }
 
 #services article h2 {
+    text-align: center;
     padding: 1.5rem 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
     
 }
 
 #services article h3 {
-    padding: 1rem 2rem;
     font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    text-align: center;
+    
 }
 
 #services article ul {
     list-style: none;
+     margin-bottom: 1rem;
+    
 }
 
 #services article ul li {
-    padding: 0 4rem;
     font-size: 1.7rem;
+    text-align: center;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: 500;
 }
 
 #services aside {
@@ -148,6 +167,7 @@ main {
 
 #services aside figure figcaption {
     font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
     padding: 0 1rem;
 }
@@ -172,10 +192,13 @@ th{
     background-color: #052d4b;
     color: #c5c4c4;
     font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
 }
 
 td {
     font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
 }
 
@@ -190,6 +213,8 @@ td {
 
 #contact address h2 {
  font-size: 2.2rem;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 600;
   margin: 1rem 1.5rem;
 }
 
@@ -197,10 +222,14 @@ td {
     padding: 0 2rem;
     margin: .5rem 0;
  font-size: 1.5rem;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 500;
 }
 
 #contact aside h2 {
  font-size: 2.2rem;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 700;
  margin: 1rem 1.5rem;
 }
 
@@ -212,10 +241,14 @@ td {
     padding: 0 2rem;
     margin: .5rem 0;
  font-size: 1.5rem;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 400;
 }
 
 #tips h2 {
     margin-top: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
     text-align: center;
     font-size: 2.2rem;
 }
@@ -226,13 +259,15 @@ td {
 
 .tips-guide {
     padding-bottom: 1rem;
-    margin: .8rem 0;
+    /* margin: .8rem 0; */
 }
 
 #tips ul li {
     text-align: center;
     margin: .1rem;
     font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    /* font-weight: 600; */
 }
 
 footer {
