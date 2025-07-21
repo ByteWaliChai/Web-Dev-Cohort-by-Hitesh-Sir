@@ -156,3 +156,75 @@ console.log(combined1); // [1, 2, 3, 4]
 
 let combined2 = [...arr1, ...arr2];
 console.log(combined2); // [1, 2, 3, 4]
+
+
+
+let nested0 = [1, [2, [3, 4]]];
+
+// 2️⃣2️⃣ Flatten one level
+let flat1 = nested0.flat(); // [1,2,[3,4]]
+
+// 2️⃣3️⃣ Flatten all
+let flatAll = nested0.flat(2); // [1,2,3,4]
+
+
+
+let products = [
+  { name: "Pen", price: 10 },
+  { name: "Pencil", price: 5 },
+  { name: "Book", price: 20 }
+];
+
+// 2️⃣4️⃣ Total price
+let total = products.reduce((sum, p) => sum + p.price, 0);
+console.log(total); // 35
+
+// 2️⃣5️⃣ List names
+let names = products.map(p => p.name); // ["Pen","Pencil","Book"]
+
+
+
+
+// Imperative
+let doubled0 = [];
+for (let n of [1,2,3]) {
+  doubled0.push(n*2);
+}
+
+// Functional
+let doubled2 = [1,2,3].map(n => n*2);
+
+
+
+
+let words = ["apple", "banana", "apple"];
+let count = words.reduce((acc, word) => {
+  acc[word] = (acc[word] || 0) + 1;
+  return acc;
+}, {});
+console.log(count); // {apple: 2, banana: 1}
+
+
+
+
+let arr = [{x:1}, {x:2}];
+let copy = [...arr];
+copy[0].x = 99;
+console.log(arr[0].x); // 99
+
+
+
+Array.of(5);         // [5]
+Array.from("hello"); // ['h','e','l','l','o']
+
+
+
+let nums0 = [1,2,3];
+nums0.some(n => n > 2);     // true
+nums0.every(n => n > 0);    // true
+nums0.findIndex(n => n==2); // 1
+
+
+let arr0 = [1,2,3,4,5];
+let result = arr0.filter(n=>n%2).map(n=>n*10); // odd numbers, times 10
+console.log(result); // [10,30,50]
