@@ -59,17 +59,80 @@ const a2 = new String("2 + 2")     // creates a String object
 
 // at()
 const sentence = "The at() method of String values takes an integer value and returns a new String"
-console.log(sentence.at(10));
-console.log(sentence.at(-10));
+// console.log(sentence.at(10));
+// console.log(sentence.at(-10));
 
 
 // charAt()
 const sentence2 = "The charAt() method of String values returns a new string"
-console.log(sentence2.charAt(7));
+// console.log(sentence2.charAt(7));
 // console.log(sentence2.charAt(-1));
 
 
 
 // charCodeAt()
 const sentence3 = "The charCodeAt() method of String values returns an integer between 0 and 65535"
-console.log(sentence3.charCodeAt(5));
+// console.log(sentence3.charCodeAt(5));
+
+
+
+// concat()
+const str1 = "Hello ";
+const str2 = "World";
+
+// console.log(str1.concat(str2));
+
+const hello = "Hello, ";
+// console.log(hello.concat("Prabhat", ". Have a nice day."));
+// Hello, Prabhat. Have a nice day.
+
+const greetList = ["Hello", " ", "Prabhat07", "!"];
+// console.log("".concat(...greetList));   // "Hello Prabhat07!"
+
+// console.log("".concat({})) // "[object Object]"
+"".concat([]) // ""
+"".concat(null) // "null"
+"".concat(true) // "true"
+"".concat(4, 5) // "45"
+
+
+
+
+// endsWith()
+const cat01 = "Cats are the best!"
+// console.log(cat01.endsWith("best!"));  // true
+
+// console.log(cat01.endsWith("best", 17));  // true
+
+const cat02 = "Is this a question?"
+// console.log(cat02.endsWith("question"));  // false
+
+const str = "To be, or not to be, that is the question.";
+
+// console.log(str.endsWith("question.")); // true
+// console.log(str.endsWith("to be")); // false
+// console.log(str.endsWith("to be", 19)); // true
+
+
+// includes()
+const noun = "A noune is a nameing word."
+console.log(noun.includes("is"));
+
+"Blue Whale".includes("blue"); // returns false
+
+"Blue Whale".includes("blue"); // returns false
+
+
+const blog01 = "To be, or not to be, that is the question.";
+
+// console.log(blog01.includes("To be")); // true
+// console.log(blog01.includes("question")); // true
+// console.log(blog01.includes("nonexistent")); // false
+// console.log(blog01.includes("To be", 1)); // false
+// console.log(blog01.includes("TO BE")); // false
+// console.log(blog01.includes("")); // true
+
+
+
+// indexOf()
+
